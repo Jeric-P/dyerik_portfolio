@@ -1396,6 +1396,26 @@ body {
   .hero-content {
     grid-template-columns: 1fr;
     gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Reorder - image on top */
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
   }
 
   .hero-title {
@@ -1472,13 +1492,34 @@ body {
     font-size: 16px;
   }
 
+  /* Reorder hero content - image on top for mobile */
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-text {
+    order: 1;
+    text-align: center;
+  }
+
   .hero-buttons {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
   }
 
   .btn {
     width: 100%;
     justify-content: center;
+    max-width: 350px;
   }
 
   .image-wrapper {
@@ -1512,6 +1553,11 @@ body {
     padding: 30px;
   }
 
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .card-title {
     font-size: 22px;
   }
@@ -1519,6 +1565,16 @@ body {
   .skills-gained,
   .seminars-section {
     padding: 40px 20px;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .seminar-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .skills-gained h3,
@@ -1533,6 +1589,10 @@ body {
   }
 
   /* Contact Section */
+  .contact-content {
+    gap: 40px;
+  }
+
   .contact-info,
   .contact-form-wrapper {
     padding: 35px 25px;
@@ -1542,9 +1602,27 @@ body {
     font-size: 24px;
   }
 
+  .info-items {
+    gap: 20px;
+  }
+
+  .info-item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .info-icon {
+    flex-shrink: 0;
+  }
+
   /* About Section */
   .about-section {
     padding: 100px 0 60px;
+  }
+
+  .about-content {
+    gap: 40px;
   }
 
   .about-subtitle {
@@ -1557,6 +1635,12 @@ body {
 
   .about-highlights {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .skills-title {
@@ -1673,6 +1757,8 @@ body {
   .btn {
     padding: 14px 28px;
     font-size: 14px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .social-icon {
